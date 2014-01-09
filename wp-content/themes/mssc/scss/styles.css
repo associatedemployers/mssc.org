@@ -1,0 +1,808 @@
+/**
+    * @outputFile ../css/styles.css
+    * @outputStyle expanded
+*/
+/* Negative number to pull down bg. */
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0e782c;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 0.77em;
+  color: #494949;
+  line-height: 1.8em;
+}
+
+div.shadedBox {
+  padding: 1.5em;
+  margin: 1em 1em 2.5em 0.25em;
+  border-radius: 4px;
+  background: #EEEEEE;
+}
+div.shadedBox p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+a.more {
+  text-decoration: none;
+  color: #0e782c;
+  font-size: 0.8em;
+}
+a.more:after {
+  content: '>';
+  padding-left: 0.5em;
+}
+a.more:hover {
+  /*        text-decoration: underline;*/
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+header {
+  position: relative;
+  z-index: 20;
+}
+header .logo {
+  display: block;
+  background-image: url("../img/logo.png");
+  height: 114px;
+  width: 457px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: 10;
+}
+header .info {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+  color: #666666;
+  margin-top: 22px;
+  font-weight: lighter;
+}
+header .info .phoneNumber, header .info .address {
+  display: block;
+}
+header .info .phoneNumber {
+  font-size: 1.8em;
+  margin-bottom: 0.4em;
+}
+header .info .address {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+header nav {
+  margin: 7em 0 1em 0;
+  text-align: right;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+header nav ul li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+header nav ul li a {
+  color: #666666;
+  text-decoration: none;
+  padding: 0 1.2em 0;
+  font-size: 0.8em;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav ul li a:last-child {
+  padding-right: 0;
+}
+
+.bannerContainer {
+  width: 100%;
+  margin: 0 auto 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  height: 395px;
+}
+.bannerContainer .bigBanner {
+  height: 395px;
+  background: url("../img/big-banner.png") center no-repeat;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.bannerContainer .bannerContent {
+  width: 960px;
+  margin: 0 auto 0;
+  right: 0px;
+  z-index: 40;
+  height: 395px;
+  position: relative;
+}
+.bannerContainer .bannerContent img {
+  position: absolute;
+  top: 30px;
+  width: 500px;
+  height: 275px;
+  border: 2px solid #505050;
+  box-shadow: 0px 0px 25px black;
+}
+.bannerContainer .bannerContent .headline {
+  width: 40%;
+  position: absolute;
+  right: 0px;
+  text-align: left;
+  text-indent: -50px;
+  font-size: 2.3em;
+  color: white;
+  text-shadow: 2px 2px 3px #494843;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.bannerContainer .bannerContent .headline.orange {
+  color: #F19827;
+  margin-top: 140px;
+}
+.bannerContainer .bannerContent .headline.white {
+  color: white;
+  margin-top: 40px;
+}
+.bannerContainer .loginContainer {
+  margin: 0 auto 0;
+  width: 960px;
+}
+.bannerContainer .loginContainer .loginBg, .bannerContainer .loginContainer .login {
+  width: 470px;
+  position: absolute;
+  right: 0px;
+  bottom: 49px;
+  padding: 20px 10px 16px 0;
+}
+.bannerContainer .loginContainer .loginBg {
+  height: 20px;
+  z-index: 0;
+  box-shadow: 1px 1px 3px #7289B4;
+}
+.bannerContainer .loginContainer .login {
+  z-index: 40;
+}
+
+.loginContainer {
+  position: relative;
+}
+.loginContainer .loginBg, .loginContainer .login {
+  display: block;
+  text-align: right;
+  font-size: 1.2em;
+}
+.loginContainer .loginBg {
+  height: 20px;
+  border-radius: 4px;
+  background-color: #0f7b2d;
+  box-shadow: 1px 1px 3px #7289B4;
+}
+.loginContainer .login {
+  color: white;
+  padding-right: 10px;
+  text-decoration: none;
+}
+.loginContainer .login:after {
+  content: '>';
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  padding-left: 5px;
+}
+.loginContainer .login:hover {
+  text-shadow: 0px 0px 10px #EEE;
+}
+
+.content {
+  position: relative;
+  margin-bottom: 260px;
+}
+.content.frontpage, .content.page.wsidebar {
+  margin-bottom: 100px;
+}
+.content.frontpage {
+  background: url("../img/squiggle.png") repeat-y;
+}
+.content.page > * {
+  position: relative;
+  z-index: 20;
+}
+.content.page .grid_12 > * {
+  margin-right: 3em;
+}
+.content.page h2, .content.page h3 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  clear: both;
+}
+.content.page ul.threeColumn {
+  clear: both;
+  margin-bottom: 3em;
+}
+.content.page ul.threeColumn li {
+  width: 30%;
+  float: left;
+  height: 2em;
+  font-size: 0.77em;
+  line-height: 1.3em;
+}
+.content .grid_8 > *:not(.customizedTraining) {
+  position: relative;
+  z-index: 20;
+}
+.content .loginContainer {
+  display: none;
+}
+.content p {
+  margin-bottom: 1.5em;
+}
+.content .alignright {
+  float: right;
+}
+.content .alignleft {
+  float: left;
+}
+.content .latestContainer {
+  width: 40%;
+  float: left;
+}
+.content .latestContainer h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.65em;
+}
+.content .latestContainer p.date {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.content .latestContainer p:not(.date) {
+  color: #494949;
+}
+.content.frontpage #sidebar .sidebarBg {
+  padding-bottom: 5em;
+}
+.content #sidebar {
+  float: right;
+  margin-top: -9em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  position: relative;
+}
+.content #sidebar .sidebarBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/sidebar-bg.png") 50px 250px no-repeat #dddddd;
+  border-left: 4px solid #F19827;
+  z-index: 0;
+  margin-top: -9em;
+  padding-bottom: 9em;
+}
+.content #sidebar > *:not(.sidebarBg):not(.isnet) {
+  position: relative;
+  z-index: 20;
+}
+.content #sidebar img {
+  width: 303px;
+  height: 278px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: block;
+  bottom: -30px;
+  z-index: 20;
+}
+.content #sidebar .loginContainer {
+  display: none;
+}
+.content #sidebar .upcomingTraining {
+  margin-top: 3em;
+  padding-left: 1em;
+  position: relative;
+  z-index: 20;
+}
+.content #sidebar .upcomingTraining h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.1em;
+}
+.content #sidebar .upcomingTraining h4 {
+  color: #666666;
+  font-size: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+.content #sidebar .upcomingTraining p {
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+.content #sidebar .upcomingTraining p a.more {
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+.content #sidebar .upcomingTraining .circle {
+  background-repeat: no-repeat;
+  min-height: 50px;
+  margin-left: -40px;
+  margin-bottom: 1em;
+}
+.content #sidebar .upcomingTraining .circle > * {
+  padding-left: 65px;
+}
+.content #sidebar .upcomingTraining .circle.firstAid {
+  background-image: url("../img/first-aid.png");
+}
+.content #sidebar .upcomingTraining .circle.cstop {
+  background-image: url("../img/cstop.png");
+}
+.content #sidebar .upcomingTraining .circle.pit {
+  background-image: url("../img/pit.png");
+}
+.content #sidebar .isnet {
+  position: relative;
+  height: 200px;
+}
+.content #sidebar .isnet * {
+  position: relative;
+  z-index: 20;
+  color: black;
+}
+.content #sidebar .isnet h4 {
+  padding-top: 100px;
+  font-size: 1.5em;
+  padding-left: 120px;
+  margin-bottom: 0em;
+}
+.content #sidebar .isnet p {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 1.2em;
+}
+.content #sidebar .isnet a, .content #sidebar .isnet a:visited, .content #sidebar .isnet a:active, .content #sidebar .isnet a:hover {
+  color: #ED5B2D;
+}
+.content #sidebar .isnet .isnLogo {
+  background: url("../img/isn-logo.png");
+  height: 101px;
+  width: 125px;
+  z-index: 1;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+}
+.content #sidebar .isnet .bg {
+  background: url("../img/isn-bg.png") repeat;
+  position: absolute;
+  height: 170%;
+  width: 100%;
+  z-index: 0;
+  margin-left: 4px;
+}
+.content .customizedTraining {
+  background-color: #DDDDDD;
+  border-top: 4px solid #D1D1D1;
+  clear: both;
+  height: 250px;
+  position: relative;
+  z-index: 0;
+  margin-right: -20px;
+  margin-left: -270px;
+}
+.content .customizedTraining * {
+  padding-left: 520px;
+  padding-right: 40px;
+}
+.content .customizedTraining .safetyImage {
+  width: 328px;
+  height: 401px;
+  background-image: url("../img/safety-image.png");
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 200px;
+  bottom: 90px;
+}
+.content .customizedTraining h2 {
+  margin-top: 0.7em;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.circleContainer {
+  width: 55%;
+  float: right;
+}
+.circleContainer .circle {
+  float: right;
+  margin-bottom: 3em;
+  background-repeat: no-repeat;
+  min-height: 63px;
+  padding-top: 0em;
+  position: relative;
+  height: 5em;
+}
+.circleContainer .circle > a {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.circleContainer .circle h3, .circleContainer .circle p {
+  margin-left: 70px;
+}
+.circleContainer .circle h3 {
+  line-height: 1.1em;
+  margin-bottom: 0.3em;
+  font-size: 1.4em;
+}
+.circleContainer .circle p {
+  margin-bottom: 0.5em;
+}
+.circleContainer .circle p a.more {
+  margin-left: 0.5em;
+}
+.circleContainer .circle p {
+  color: #666666;
+  line-height: 2em;
+}
+.circleContainer .circle.training {
+  background-image: url("../img/training.png");
+}
+.circleContainer .circle.consulting {
+  background-image: url("../img/consulting.png");
+}
+.circleContainer .circle.compliance {
+  background-image: url("../img/compliance.png");
+}
+
+.footerBgContainer {
+  margin-top: -327px;
+  height: 327px;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+}
+.footerBgContainer .footerBg {
+  position: absolute;
+  width: 100%;
+  height: 327px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.footerBgContainer .footerBg {
+  background: url("../img/footer.png") center bottom no-repeat;
+}
+
+.head {
+  background: url("../img/head.png") center no-repeat;
+  width: 203px;
+  height: 158px;
+  position: absolute;
+  left: 14px;
+  bottom: 22px;
+  z-index: 100;
+}
+
+footer {
+  z-index: 50;
+  position: relative;
+  color: white;
+  margin-top: -100px;
+}
+footer nav ul {
+  text-align: center;
+}
+footer nav ul li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 0 3px 0;
+  font-weight: lighter;
+}
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+footer .nsc {
+  width: 116px;
+  height: 109px;
+  background: url("../img/nsc-member.png");
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}
+footer .info {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+footer .info a {
+  color: white;
+  text-decoration: none;
+}
+footer .info a:visited, footer .info a:active {
+  color: white;
+}
+footer .info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    min-width: 800px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  .bannerContainer .bannerContent {
+    width: 800px;
+  }
+  .bannerContainer .bannerContent .headline {
+    text-indent: -25px;
+    width: 30%;
+    font-size: 1.8em;
+  }
+  .bannerContainer .bannerContent .headline.orange {
+    padding-top: 20px;
+  }
+
+  .container_12 {
+    width: 800px;
+  }
+  .container_12 .grid_8, .container_12 .grid_4, .container_12 .grid_12 {
+    margin: 0;
+    padding: 2%;
+  }
+  .container_12 .grid_12 {
+    width: 96%;
+  }
+  .container_12 .grid_8 {
+    width: 61%;
+  }
+  .container_12 .grid_4 {
+    width: 240px;
+  }
+
+  .bannerContainer .loginContainer {
+    display: none;
+  }
+
+  .content.frontpage {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  .content .circle:not(#sidebar .circle) {
+    float: left;
+  }
+  .content .circleContainer .circle {
+    margin-bottom: 5em;
+  }
+  .content #sidebar {
+    padding-top: 9.5em;
+  }
+  .content #sidebar img {
+    width: 276px;
+  }
+  .content #sidebar .loginContainer {
+    display: block;
+    position: relative;
+    margin-bottom: 2em;
+    width: 100%;
+    margin-left: 15px;
+  }
+  .content #sidebar .loginBg {
+    height: 40px;
+  }
+  .content #sidebar .login {
+    position: absolute;
+    top: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .content #sidebar .isnet {
+    width: 272px;
+  }
+  .content #sidebar .isnet .bg {
+    height: 170%;
+  }
+  .content #sidebar .isnet h4 {
+    font-size: 1.3em;
+  }
+  .content .customizedTraining {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 1em 0 0 0;
+  }
+  .content .customizedTraining * {
+    margin: 0;
+    padding: 0;
+  }
+  .content .customizedTraining .safetyImage {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    min-width: 100%;
+  }
+
+  header .logo {
+    position: relative;
+    width: 100%;
+    background-position: center bottom;
+    margin: 0 auto 0;
+    margin-bottom: 2em;
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+  }
+  header .info {
+    float: left;
+    display: none;
+  }
+  header nav {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 3em;
+  }
+  header nav.short {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  header nav.short ul li:last-child {
+    border-bottom: none;
+  }
+  header nav ul li {
+    display: block;
+    text-align: center;
+    padding: 0.3em 0 0.3em 0;
+    border-top: 1px solid #666666;
+    margin: 0 1em 0;
+  }
+  header nav ul li:last-child {
+    border-bottom: 1px solid #666666;
+  }
+  header nav ul li:hover {
+    background: #EEEEEE;
+  }
+  header nav ul li:hover a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .bannerContainer .bannerContent {
+    width: 100%;
+    text-align: center;
+  }
+  .bannerContainer .bannerContent .headline {
+    display: none;
+  }
+  .bannerContainer .bannerContent img {
+    width: 90%;
+    height: auto;
+    margin: 1.5em auto 0;
+    position: relative;
+  }
+
+  .content .latestContainer, .content .circleContainer {
+    width: 100%;
+    float: left;
+  }
+  .content .circle {
+    float: left;
+    margin-left: 3%;
+  }
+  .content .loginContainer {
+    display: block;
+    position: relative;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+  .content .loginBg {
+    height: 40px;
+  }
+  .content .login {
+    position: absolute;
+    top: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .content .customizedTraining {
+    height: auto;
+  }
+  .content #sidebar {
+    margin-top: 0em;
+    padding-top: 0;
+  }
+  .content #sidebar .isnet, .content #sidebar img {
+    display: none;
+  }
+  .content #sidebar .upcomingTraining h3 {
+    margin-bottom: 1em;
+  }
+  .content #sidebar .upcomingTraining .circle {
+    margin-left: 0%;
+  }
+  .content #sidebar .upcomingTraining .circle h4 {
+    margin-top: 0em;
+  }
+  .content #sidebar .sidebarBg {
+    display: none;
+  }
+  .content #sidebar .loginContainer {
+    display: none;
+  }
+  .content #sidebar .hrAnswers p {
+    padding-left: 7em;
+  }
+  .content #sidebar .upcomingTraining {
+    margin-bottom: 7em;
+  }
+  .content #sidebar .consulting {
+    width: 100%;
+  }
+  .content #sidebar .consulting p {
+    width: 96%;
+    margin: 0;
+    padding: 2%;
+    text-align: left;
+  }
+
+  .container_12 {
+    width: 100%;
+  }
+  .container_12 .grid_8, .container_12 .grid_4 {
+    margin: 0;
+    padding: 2%;
+  }
+  .container_12 .grid_8 {
+    width: 96%;
+  }
+  .container_12 .grid_4 {
+    width: 96%;
+  }
+
+  footer .nsc {
+    display: none;
+  }
+  footer nav {
+    display: none;
+  }
+}

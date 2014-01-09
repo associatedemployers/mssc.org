@@ -1,0 +1,342 @@
+
+$ipadMinWidth: 800px;
+@media screen and (max-width: 960px) {
+    body {
+        min-width: $ipadMinWidth;
+    }
+
+    header {
+        nav {
+            width: 100%;
+        }
+    }
+
+    .bannerContainer {
+        .bannerContent {
+            width: $ipadMinWidth;
+
+            .headline {
+                text-indent: -25px;
+                width: 30%;
+                font-size: 1.8em;
+
+                &.orange {
+                    padding-top: 20px;
+                }
+
+            }
+
+        }
+    }
+
+    .container_12 {
+        width: 800px;
+
+        .grid_8, .grid_4, .grid_12 {
+            margin: 0;
+            padding: 2%;
+        }
+
+        .grid_12 {
+            width: 96%;
+        }
+
+        .grid_8 {
+            width: 61%
+        }
+
+        .grid_4 {
+            width: 240px;
+        }
+    }
+
+    .bannerContainer {
+        .loginContainer {
+            display: none;
+        }
+    }
+
+    .content {
+
+        &.frontpage {
+            background-position: left bottom;
+            background-repeat: no-repeat;
+        }
+
+        .circle:not(#sidebar .circle) {
+            float: left;
+        }
+
+        .circleContainer {
+            .circle {
+                margin-bottom: 5em;
+            }
+        }
+
+        #sidebar {
+            padding-top: 9.5em;
+
+            img {
+                width: 276px;
+            }
+
+            .loginContainer {
+                display: block;
+                position: relative;
+                margin-bottom: 2em;
+                width: 100%;
+                margin-left: 15px;
+            }
+
+            .loginBg {
+                height: 40px;
+            }
+
+            .login {
+                position: absolute;
+                top: 0px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .isnet {
+                width: 272px;
+
+                .bg {
+                    height: 170%;
+                }
+
+                h4 {
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .customizedTraining {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 1em 0 0 0;
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .safetyImage {
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+$iphoneMinWidth: 500px;
+@media screen and (max-width: 500px) {
+    body {
+        min-width: 100%;
+    }
+
+    header {
+        .logo {
+            position: relative;
+            width: 100%;
+            background-position: center bottom;
+            margin: 0 auto 0;
+            margin-bottom: 2em;
+            background-size: 90% auto;
+            background-repeat: no-repeat;
+        }
+
+        .info {
+            float: left;
+            display: none;
+        }
+
+        nav {
+            clear: both;
+            margin-top: 0;
+            margin-bottom: 3em;
+
+            &.short {
+                margin-top: 0;
+                margin-bottom: 0;
+
+                ul li:last-child {
+                    border-bottom: none;
+                }
+
+            }
+
+            ul {
+                li {
+                    display: block;
+                    text-align: center;
+                    padding: 0.3em 0 0.3em 0;
+                    border-top: 1px solid #666666;
+                    margin: 0 1em 0;
+
+                    &:last-child {
+                        border-bottom: 1px solid #666666;
+                    }
+
+                    &:hover {
+                        background: #EEEEEE;
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .bannerContainer {
+        .bannerContent {
+            width: 100%;
+            text-align: center;
+
+            .headline {
+                display: none;
+            }
+
+            img {
+                width: 90%;
+                height: auto;
+                margin: 1.5em auto 0;
+                position: relative;
+            }
+
+        }
+    }
+
+    .content {
+
+        .latestContainer, .circleContainer {
+            width: 100%;
+            float: left;
+        }
+
+        .circle {
+            float: left;
+            margin-left: 3%;
+        }
+
+        .loginContainer {
+            display: block;
+            position: relative;
+            margin-bottom: 2em;
+            width: 100%;
+        }
+
+        .loginBg {
+            height: 40px;
+        }
+
+        .login {
+            position: absolute;
+            top: 0px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        .customizedTraining {
+            height: auto;
+        }
+
+        #sidebar {
+            margin-top: 0em;
+            padding-top: 0;
+
+            .isnet, img {
+                display: none;
+            }
+
+            .upcomingTraining {
+
+                h3 {
+                    margin-bottom: 1em;
+                }
+
+                .circle {
+                    h4 {
+                        margin-top: 0em;
+                    }
+
+                    margin-left: 0%;
+                }
+
+            }
+
+            .sidebarBg {
+                display: none;
+            }
+
+            .loginContainer {
+                display: none;
+            }
+
+            .hrAnswers {
+
+                p {
+                    padding-left: 7em;
+                }
+            }
+
+            .upcomingTraining {
+                margin-bottom: 7em;
+            }
+
+            .consulting {
+                width: 100%;
+
+                p {
+                    width: 96%;
+                    margin: 0;
+                    padding: 2%;
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
+    .container_12 {
+        width: 100%;
+
+        .grid_8, .grid_4 {
+            margin: 0;
+            padding: 2%;
+        }
+
+        .grid_8 {
+            width: 96%
+        }
+
+        .grid_4 {
+            width: 96%;
+        }
+    }
+
+    footer {
+        .nsc {
+            display: none;
+        }
+        nav {
+            display: none;
+        }
+    }
+
+}
