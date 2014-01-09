@@ -1,9 +1,0 @@
-/********** TINY MCE: FIXES **********/
-.wg .mceStatusbar { position: relative !important; }
-.wg #description_resize { bottom: 2px !important; position: absolute !important; top: auto !important; right: 0 !important; }
-.wg #editorcontainer textarea { width: 100%; }
-
-.wg #button_bar { margin: 20px 0 5px; }
-
-.wg p { position: relative; }
-.wg label.error { position: absolute; top: 15px; left: 1px; color: #fff; font-size: 12px; background-color: #D54E21; text-transform: uppercase; border: 1px solid #bb4118; padding: 4px 8px; white-space: pre; font-weight: bold; z-index: 2; border-radius: 3px; box-shadow: 0 0 2px #bb4118; text-shadow: 1px 1px #802709; opacity: 0.9; }
