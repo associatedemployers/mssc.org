@@ -27,6 +27,13 @@
 		<?php if(is_front_page()) { ?>
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jfeed.js" type="text/javascript"></script>
 		<?php } ?>
+		<?php if(is_page_template('page_member.php')) { ?>
+			<!-- bootstrap -->
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+			<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+			<!-- end bootstrap -->
+		<?php } ?>
 	<?php wp_head(); ?>
 </head>
 <?php if(is_page('membership') || is_page('services')) { ?>
