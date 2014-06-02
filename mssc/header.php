@@ -133,44 +133,44 @@
 <div class="bannerContainer">
 	<div class="bigBanner"><div class="slider">
 		<div class="slide ac">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide1_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide1_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide1_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide1_link')) { echo ('<a href="' . ae_options('slider_slide1_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide1_heading'); ?></h1>
+				<?php if(ae_options('slider_slide1_link')) { echo ('<a href="' . ae_options('slider_slide1_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide1_heading'); ?></h1><?php if(ae_options('slider_slide1_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide1_subheading'); ?></h2>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide2_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide2_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide2_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide2_link')) { echo ('<a href="' . ae_options('slider_slide2_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide2_heading'); ?></h1>
+				<?php if(ae_options('slider_slide2_link')) { echo ('<a href="' . ae_options('slider_slide2_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide2_heading'); ?></h1><?php if(ae_options('slider_slide2_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide2_subheading'); ?></h2>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide3_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide3_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide3_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide3_link')) { echo ('<a href="' . ae_options('slider_slide3_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide3_heading'); ?></h1>
+				<?php if(ae_options('slider_slide3_link')) { echo ('<a href="' . ae_options('slider_slide3_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide3_heading'); ?></h1><?php if(ae_options('slider_slide3_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide3_subheading'); ?></h2>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide4_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide4_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide4_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide4_link')) { echo ('<a href="' . ae_options('slider_slide4_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide4_heading'); ?></h1>
+				<?php if(ae_options('slider_slide4_link')) { echo ('<a href="' . ae_options('slider_slide4_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide4_heading'); ?></h1><?php if(ae_options('slider_slide4_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide4_subheading'); ?></h2>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide5_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide5_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide5_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide5_link')) { echo ('<a href="' . ae_options('slider_slide5_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide5_heading'); ?></h1>
+				<?php if(ae_options('slider_slide5_link')) { echo ('<a href="' . ae_options('slider_slide5_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide5_heading'); ?></h1><?php if(ae_options('slider_slide5_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide5_subheading'); ?></h2>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="slide-image" style="background: url('<?php echo esc_url(ae_options('slider_slide6_image')); ?>') center no-repeat; background-size:contain;"></div>
+			<div class="slide-image<?php if(ae_options('slider_slide6_link')) { echo (' image-link'); } ?>" style="background: url('<?php echo esc_url(ae_options('slider_slide6_image')); ?>') center no-repeat; background-size:contain;"><?php if(ae_options('slider_slide6_link')) { echo ('<a href="' . ae_options('slider_slide6_link') . '"><span class="span-link"></span></a>'); } ?></div>
 			<div class="slide-text">
-				<h1 class="slide-heading"><?php echo ae_options('slider_slide6_heading'); ?></h1>
+				<?php if(ae_options('slider_slide6_link')) { echo ('<a href="' . ae_options('slider_slide6_link') . '">'); } ?><h1 class="slide-heading"><?php echo ae_options('slider_slide6_heading'); ?></h1><?php if(ae_options('slider_slide6_link')) { echo ('</a>'); } ?>
 				<h2 class="slide-subheading"><?php echo ae_options('slider_slide6_subheading'); ?></h2>
 			</div>
 		</div>

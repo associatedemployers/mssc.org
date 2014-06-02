@@ -89,6 +89,28 @@ header nav .rss-feed a:visited {
 .bannerContainer .bannerContent .headline { width: 48%; float: right; font-size: 30px; color: white; text-shadow: 2px 2px 3px #000; text-transform: uppercase; margin-top: 60px; }
 .bannerContainer .bannerContent .headline span { float: right; display: block; padding-bottom: 20px; }
 
+.image-link:hover {
+	opacity: 0.5;
+}
+.image-link {
+	opacity: 1;
+	position:relative;
+}
+.span-link {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+.slide a:link {
+	text-decoration: none !important;
+}
+.slide a:visited {
+	color:#FFF;
+}
+
 .slider {
 	width:960px;
 	height:345px;
@@ -98,6 +120,7 @@ header nav .rss-feed a:visited {
 	width:50%;
 	height:345px;
 	margin:0;
+	position: relative;
 }
 .slide-text {
 	width:41%;
